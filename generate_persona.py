@@ -1,157 +1,3 @@
-# import praw
-# from config import client_id, client_secret, user_agent
-# from urllib.parse import urlparse
-# import openai
-# from openai import OpenAI
-# from config import openrouter_api_key
-# import os
-
-# openai.api_key = openrouter_api_key
-# openai.api_base = "https://openrouter.ai/api/v1"
-
-
-
-# def build_prompt(username, posts, comments):
-#     content = f"Reddit profile: u/{username}\n\n"
-
-#     content += "=== POSTS ===\n"
-#     for post in posts:
-#         content += f"Title: {post['title']}\nText: {post['text']}\nURL: {post['url']}\n\n"
-
-#     content += "=== COMMENTS ===\n"
-#     for comment in comments:
-#         content += f"{comment['body']}\nURL: {comment['url']}\n\n"
-
-#     prompt = f"""
-# You are an expert analyst tasked with building a user persona.
-
-# Based on the Reddit posts and comments below from u/{username}, generate a detailed persona. Include:
-
-# - Interests
-# - Tone & Writing Style
-# - Goals & Needs
-# - Behavior & Habits
-# - Frustrations
-# - Personality traits (MBTI if guessable)
-# - Motivations (in bullet or table format)
-# - Include **citations** (quote and link) after each trait.
-
-# Structure it in clear text. Keep the tone human-readable.
-
-# {content}
-# """
-
-#     return prompt
-
-
-# def generate_persona_with_openrouter(prompt, model="mistralai/mistral-7b-instruct"):
-#     try:
-#         response = openai.ChatCompletion.create(
-#             model=model,
-#             messages=[{"role": "user", "content": prompt}],
-#             temperature=0.7
-#         )
-#         return response['choices'][0]['message']['content']
-#     except Exception as e:
-#         print(f"LLM generation error: {e}")
-#         return None
-
-
-# def save_persona(username, persona_text):
-#     path = os.path.join("users", f"{username}_persona.txt")
-#     with open(path, "w", encoding="utf-8") as f:
-#         f.write(persona_text)
-#     print(f"\n✅ Persona saved to: {path}")
-
-# def extract_username_from_url(profile_url):
-#     """
-#     Extracts 'u/username' from Reddit profile URL.
-#     Ex: https://www.reddit.com/user/kojied → kojied
-#     """
-#     return profile_url.rstrip("/").split("/")[-1]
-
-
-# def fetch_user_data(username):
-#     """
-#     Fetch latest 50 posts and comments from a Reddit user.
-#     Returns: (list_of_posts, list_of_comments)
-#     """
-#     reddit = praw.Reddit(client_id=client_id,
-#                          client_secret=client_secret,
-#                          user_agent=user_agent)
-
-#     user = reddit.redditor(username)
-
-#     posts = []
-#     comments = []
-
-#     try:
-#         for submission in user.submissions.new(limit=50):
-#             posts.append({
-#                 'title': submission.title,
-#                 'text': submission.selftext,
-#                 'url': f"https://www.reddit.com{submission.permalink}"
-#             })
-
-#         for comment in user.comments.new(limit=50):
-#             comments.append({
-#                 'body': comment.body,
-#                 'url': f"https://www.reddit.com{comment.permalink}"
-#             })
-
-#     except Exception as e:
-#         print(f"Error fetching data: {e}")
-
-#     return posts, comments
-
-
-# def test_openrouter_connection():
-#     from openai import OpenAI
-#     from config import openrouter_api_key
-
-#     client = OpenAI(
-#         api_key=openrouter_api_key,
-#         base_url="https://openrouter.ai/api/v1"
-#     )
-
-#     response = client.chat.completions.create(
-#         model="mistralai/mistral-7b-instruct",
-#         messages=[{"role": "user", "content": "Say hello!"}],
-#         temperature=0.7
-#     )
-
-#     print("✅ OpenRouter LLM Response:", response.choices[0].message.content)
-
-
-# Call this at the bottom:
-# test_openrouter_connection()
-
-
-
-# if __name__ == "__main__":
-#     profile_url = input("Enter Reddit profile URL: ").strip()
-#     username = extract_username_from_url(profile_url)
-#     print(f"\nFetching data for user: {username}...\n")
-
-#     posts, comments = fetch_user_data(username)
-
-#     if not posts and not comments:
-#         print("❌ No data found.")
-#         exit()
-
-#     print("🧠 Generating prompt...")
-#     prompt = build_prompt(username, posts, comments)
-
-#     print("⚡ Sending to LLM...")
-#     persona = generate_persona_with_openrouter(prompt)
-
-#     if persona:
-#         save_persona(username, persona)
-#     else:
-#         print("❌ Persona generation failed.")
-
-
-
 import os
 import openai
 import praw
@@ -201,7 +47,7 @@ def fetch_user_data(username):
             })
 
     except Exception as e:
-        print(f"❌ Error fetching Reddit data: {e}")
+        print(f"Error fetching Reddit data: {e}")
 
     return posts, comments
 
@@ -300,7 +146,7 @@ def generate_persona_with_openrouter(prompt, model="mistralai/mistral-7b-instruc
         )
         return response.choices[0].message.content
     except Exception as e:
-        print(f"❌ LLM generation error: {e}")
+        print(f"LLM generation error: {e}")
         return None
 
 # Save output to users/username_persona.txt
@@ -309,7 +155,7 @@ def save_persona(username, persona_text):
     file_path = os.path.join("users", f"{username}_persona.txt")
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(persona_text)
-    print(f"\n✅ Persona saved to: {file_path}")
+    print(f"\nPersona saved to: {file_path}")
 
 # Main execution
 if __name__ == "__main__":
@@ -320,16 +166,16 @@ if __name__ == "__main__":
     posts, comments = fetch_user_data(username)
 
     if not posts and not comments:
-        print("❌ No data found. Exiting.")
+        print("No data found. Exiting.")
         exit()
 
-    print("🧠 Building prompt...")
+    print("Building prompt...")
     prompt = build_prompt(username, posts, comments)
 
-    print("⚡ Generating persona via OpenRouter LLM...")
+    print("Generating persona via OpenRouter LLM...")
     persona = generate_persona_with_openrouter(prompt)
 
     if persona:
         save_persona(username, persona)
     else:
-        print("❌ Persona generation failed.")
+        print("Persona generation failed.")
