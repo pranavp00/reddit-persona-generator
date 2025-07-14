@@ -1,4 +1,3 @@
-
 # Reddit Persona Generator – BeyondChats Internship Assignment
 
 This project was developed as part of the **Generative AI Internship Assignment for BeyondChats**.
