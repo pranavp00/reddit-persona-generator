@@ -1,112 +1,121 @@
-Reddit Persona Generator – BeyondChats Internship Assignment
+====================================================================
+REDDET PERSONA GENERATOR – BEYONDCHATS INTERNSHIP ASSIGNMENT
+====================================================================
 
-This project was built as part of the Generative AI Internship Assignment for BeyondChats.
+This project was developed as part of the Generative AI Internship 
+Assignment for BeyondChats.
 
-It takes a Reddit user profile URL as input, scrapes the user's latest posts and comments using the Reddit API, and then generates a detailed user persona using a hosted open-source LLM via OpenRouter (Mistral-7B). The output is saved as a plain .txt file with clear citations (quotes and links) supporting each insight.
+It accepts a Reddit user profile URL, scrapes the user's recent 
+posts and comments using the Reddit API, and uses a hosted 
+open-source LLM (via OpenRouter) to generate a detailed persona. 
+Each insight is supported by quotes and links to the user's Reddit 
+activity. The output is saved as a plain .txt file.
 
-------------------------------------------------------------
-
+====================================================================
 FEATURES
+====================================================================
 
 - Scrapes Reddit user posts and comments using the Reddit API (PRAW)
-- Uses hosted open-source LLMs (Mistral via OpenRouter)
-- Generates a clean, structured persona in .txt format
-- Includes quote + link citations for every major insight
+- Uses hosted open-source LLMs (Mistral 7B via OpenRouter)
+- Generates clean, structured user personas in .txt format
+- Includes citations for every major insight (quote + Reddit link)
 - Complies with all assignment requirements
 
-------------------------------------------------------------
-
-FOLDER STRUCTURE
+====================================================================
+PROJECT STRUCTURE
+====================================================================
 
 reddit-persona-generator/
 ├── generate_persona.py        → Main script
 ├── config.py                  → API keys (excluded from Git)
 ├── requirements.txt           → Python dependencies
 ├── README.txt                 → This file
-├── .gitignore                 → Ignores config, .venv, pycache
+├── .gitignore                 → Ignores config.py, .venv, pycache
 └── users/
-    └── kojied_persona.txt     → Sample output
+    └── kojied_persona.txt     → Sample persona output
 
-------------------------------------------------------------
-
+====================================================================
 SETUP INSTRUCTIONS
+====================================================================
 
-1. Clone the repository
+1. Clone the repository:
 
-    git clone https://github.com/pranavp00/reddit-persona-generator.git
-    cd reddit-persona-generator
+   git clone https://github.com/pranavp00/reddit-persona-generator.git
+   cd reddit-persona-generator
 
-2. Install Python packages
+2. Install dependencies:
 
-    pip install -r requirements.txt
+   pip install -r requirements.txt
 
-3. Create your config.py file
+3. Create a config.py file and add your API keys:
 
-    # config.py
+   # config.py
+   openrouter_api_key = "sk-..."  # Get from https://openrouter.ai/keys
+   client_id = "..."              # Reddit API client_id
+   client_secret = "..."          # Reddit API client_secret
+   user_agent = "reddit_persona_app by u/yourusername"
 
-    openrouter_api_key = "sk-..."  # Get from https://openrouter.ai/keys
-    client_id = "..."              # Reddit API client_id
-    client_secret = "..."          # Reddit API client_secret
-    user_agent = "reddit_persona_app by u/yourusername"
-
-------------------------------------------------------------
-
+====================================================================
 USAGE
+====================================================================
 
-Run:
+To generate a persona, run:
 
-    python generate_persona.py
+   python generate_persona.py
 
-You will be prompted to enter a Reddit profile URL like:
+When prompted, enter a Reddit profile URL like:
 
-    https://www.reddit.com/user/kojied/
+   https://www.reddit.com/user/kojied/
 
-The output will be saved in:
+The persona will be saved as a plain text file:
 
-    users/kojied_persona.txt
+   users/kojied_persona.txt
 
-------------------------------------------------------------
-
-EXAMPLE OUTPUT
+====================================================================
+SAMPLE OUTPUT
+====================================================================
 
 A sample persona file is included:
 
-    users/kojied_persona.txt
+   users/kojied_persona.txt
 
-Each section (e.g., personality, motivations, frustrations) includes direct quotes and Reddit post links to support the analysis.
+Each section of the persona includes insights derived from the 
+user’s Reddit content, supported by direct quotes and Reddit links 
+(as required by the assignment).
 
-------------------------------------------------------------
-
+====================================================================
 TECHNOLOGIES USED
+====================================================================
 
 - Python 3
-- PRAW – Reddit API wrapper
-- OpenRouter.ai – Hosted open-source LLM platform
-- Mistral-7B Instruct – Used via OpenRouter API
+- PRAW (Python Reddit API Wrapper)
+- OpenRouter.ai (Hosted LLMs)
+- Mistral-7B Instruct (Open-source LLM via OpenRouter API)
 
-------------------------------------------------------------
+====================================================================
+ASSIGNMENT REQUIREMENTS MET
+====================================================================
 
-ASSIGNMENT GOALS MET
+✓ Accepts Reddit profile URL as input  
+✓ Scrapes posts and comments using Reddit API  
+✓ Builds a structured user persona  
+✓ Backs each insight with quote + Reddit link  
+✓ Saves output in plain .txt file  
+✓ Uses hosted open-source LLM (no local model required)
 
-- Takes Reddit profile URL as input
-- Scrapes posts and comments using Reddit API
-- Generates detailed user persona
-- Includes quote + link citations for every insight
-- Saves persona as plain .txt file
-- Uses hosted open-source LLM (no local model required)
-
-------------------------------------------------------------
-
+====================================================================
 AUTHOR
+====================================================================
 
 Pranav Pillai  
-GitHub: https://github.com/pranavp00  
+GitHub:   https://github.com/pranavp00  
 LinkedIn: https://www.linkedin.com/in/pranavpillai/
 
-------------------------------------------------------------
-
+====================================================================
 DISCLAIMER
+====================================================================
 
-This project is a submission for the BeyondChats internship assignment.  
-All insights are generated based on publicly available Reddit data.  
-This repository is not intended for commercial use unless selected.
+This project was created as a submission for the BeyondChats 
+internship assignment.  
+All insights are based on publicly available Reddit data.  
+This project is not intended for production use unless selected.
