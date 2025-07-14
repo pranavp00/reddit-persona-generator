@@ -1,0 +1,43 @@
+ User Persona for u/kojied
+
+Age (estimated): 30-35 years old
+Occupation (if inferable): Software Developer or Technology Professional (posts about coding, AI, and tech-related subjects)
+Status: Single
+Location: New York City, New York
+Tier: Expert
+Archetype: The Visionary
+
+Personality Traits:
+- Practical: Demonstrated by their analytical approach to problems and projects, as shown in their discussions on Reddit about AI, coding, and technology. (e.g. "Incredible stuff! How did you make that diagram? I've been doing it in ascii lol" - https://www.reddit.com/r/RooCode/comments/1jwf8oq/heres_how_i_make_use_of_the_different_modes_in/mmih39e/)
+- Curious: Displayed through their interest in various topics, such as art, literature, and travel, as well as their questions and discussions about other subjects like politics, basketball, and One Piece. (e.g. "Cloisters, Noguchi museum, more art galleries" - https://www.reddit.com/r/AskNYC/comments/1hntgrp/what_is_your_nyc_to_do_list_for_2025/m453mqo/)
+- Sarcastic: Shown in their use of sarcasm and humor in comments, particularly when discussing politics, basketball, and technology. (e.g. "I’m not going to be disappointed anymore. I know how the warriors give us slight hope just to disappoint" - https://www.reddit.com/r/warriors/comments/1hnvrmw/game_thread_202425_nba_regular_season_golden/m45hfw5/)
+
+Motivations:
+- Discovering new and innovative ways to use technology: Demonstrated by their interest in AI, coding, and spatial computing, as well as their discussions about the potential uses of these technologies in various industries. (e.g. "I just find this to be much easier than doing it on my Mac + display setup. Give it a try" - https://www.reddit.com/r/VisionPro/comments/1alf7av/killer_feature_accessing_chatgpt_ipad_app_and/)
+- Making a positive impact on society: Shown in their discussions about climate change, social issues, and their desire to see change for the better. (e.g. "I see so many one-off posts on this community with only a couple responses. Can’t believe there’s 2.7M members here. That alone should tell you that NFTs are no longer something people are interested in. I’d love to be proven wrong, since I feel that there was alot of potential, but so far it seems like the community is dead" - https://www.reddit.com/r/NFT/comments/1l2gcmt/nfts_in_2025_where_are_we_headed/mvt4t5c/)
+
+Personality:
+- Thoughtful and analytical: Demonstrated by their thoughtful responses to questions, as well as their careful consideration of various perspectives and arguments. (e.g. "You have to kill the bandit units, or donate crop yields though the manor (tithing, different from taxation). Also I just store ale at the tavern or keep it in the brewery for this reason" - https://www.reddit.com/r/ManorLords/comments/1lscpmo/how_does_influence_on_hard_work/n1hhd7z/)
+- Passionate about their interests: Shown in their enthusiasm for various topics, such as technology, art, and basketball, as well as their dedication to learning and exploring these subjects further. (e.g. "I do too but I rarely finish a game haha. Too little late game content" - https://www.reddit.com/r/ManorLords/comments/1lse9cn/great_game_i_hope_there_is_something_new_added_in/n1i5k2p/)
+
+Tone and Communication Style:
+- Sarcastic and humorous: Demonstrated by their use of sarcasm and humor in their comments, particularly when discussing politics, basketball, and technology. (e.g. "It’s a hard balance to strike, since without growth tiles you can’t reach a pop to build Petra before the AI does, but growth tiles (exception of oasis) aren’t buffed by Petra" - https://www.reddit.com/r/civ5/comments/1hoywu7/my_first_game_with_ige_mod_usage_and_an_ideal/m4dbpn9/)
+- Clear and concise: Shown in their ability to articulate their thoughts and ideas in a straightforward and easy-to-understand manner, as well as their ability to provide helpful and informative responses to questions and discussions. (e.g. "Yeah but it doesn’t seem to affect much though" - https://www.reddit.com/r/ManorLords/comments/1lwfdh8/anyone_else_having_an_issue_where_their_trading/n2dn0vm/)
+
+Behavior and Habits:
+- Subreddits they post in: r/VisionPro, r/ManorLords, r/ChatGPT, r/civ5, r/OnePiece, r/AskNYC, r/AskReddit, r/Warriors, r/FoodNYC, r/NFT, r/ClimateOffensive, r/Frugal, r/plantclinic, r/NYCbike, r/LeopardsAteMyFace, r/AskNYC, r/AskReddit, r/LeopardsAteMyFace, r/OptimistsUnite, r/Warriors, r/stocks, r/AskNYC, r/AskReddit, r/NFT, r/AskNYC, r/AskReddit, r/ManorLords, r/AskNYC, r/AskReddit, r/ManorLords, r/AskNYC, r/AskReddit, r/ManorLords, r/AskNYC, r/AskReddit
+- Post/comment style: Detailed, thoughtful, and informative, with a clear and concise writing style. Often provides helpful and informative responses to questions and discussions, as well as shares their own thoughts and ideas on various topics.
+- Active hours (if inferable): Active primarily during the day, based on the time zone of New York City.
+- Interaction behavior: Engages in discussions and conversations on various topics, provides helpful and informative responses, and is generally respectful and courteous to other users.
+
+Frustrations:
+- Frustrated by the lack of progress and innovation in certain areas, such as the NFT space (e.g. "I see so many one-off posts on this community with only a couple responses. Can’t believe there’s 2.7M members here. That alone should tell you that NFTs are no longer something people are interested in. I’d love to be proven wrong, since I feel that there was alot of potential, but so far it seems like the community is dead" - https://www.reddit.com/r/NFT/comments/1l2gcmt/nfts_in_2025_where_are_we_headed/mvt4t5c/)
+- Frustrated by the lack of attention and care for certain issues, such as climate change and social justice (e.g. "I do too but I rarely finish a game haha. Too little late game content" - https://www.reddit.com/r/ManorLords/comments/1lse9cn/great_game_i_hope_there_is_something_new_added_in/n1i5k2p/)
+
+Goals and Needs:
+- To discover and explore new and innovative ways to use technology, particularly in the fields of AI and spatial computing (e.g. "I just find this to be much easier than doing it on my Mac + display setup. Give it a try" - https://www.reddit.com/r/VisionPro/comments/1alf7av/killer_feature_accessing_chatgpt_ipad_app_and/)
+- To make a positive impact on society, particularly in the areas of climate change and social justice (e.g. "I see so many one-off posts on this community with only a couple responses. Can’t believe there’s 2.7M members here. That alone should tell you that NFTs are no longer something people are interested in. I’d love to be proven wrong, since I feel that there was alot of potential, but so far it seems like the community is dead" - https://www.reddit.com/r/NFT/comments/1l2gcmt/nfts_in_2025_where_are_we_headed/mvt4t5c/)
+- To improve and master various skills and hobbies, such as coding, art, and basketball (e.g. "I do too but I rarely finish a game haha. Too little late game content" - https://www.reddit.com/r/ManorLords/comments/1lse9cn/great_game_i_hope_there_is_something_new_added_in/n1i5k2p/)
+
+External Links:
+- [No external links were provided in the provided data]
